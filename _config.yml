@@ -1,1 +1,10 @@
-theme: jekyll-theme-architect
+title: BP Studio
+baseurl: ""
+remote_theme: pmarsceill/just-the-docs
+
+logo: "/assets/logo.png"
+color_scheme: bpstudio
+
+exclude:
+ - Gemfile
+ - Gemfile.lock

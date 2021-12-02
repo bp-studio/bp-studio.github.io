@@ -1,0 +1,28 @@
+.site-title,
+svg.icon {
+	color: white;
+}
+
+.site-logo {
+	width: 2em;
+	height: 1.5em;
+}
+
+@include mq(md) {
+	.side-bar,
+	.site-footer {
+		color: lightblue !important;
+	}
+
+	.site-footer a {
+		color: white;
+	}
+}
+
+.search-result:hover {
+	color: white;
+}
+
+.side-bar .nav-list a {
+	color: white;
+}
