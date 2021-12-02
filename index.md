@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+nav_exclude: true
+---
 
 <h1 class="d-flex mb-5">
 	<img class="mr-3" src="/assets/logo.png" style="height:1.25em;"> Box Pleating Studio
@@ -20,7 +25,5 @@ This app is created to help origami designers to blueprint their models in such 
 
 ## Feedbacks are greatly appreciated!
 
-If you notice any bugs, or have any suggestions, feel free to drop an issue here in GitHub.
-If you use BP Studio to create new designs,
-the author would love to see it, so please share you work to him by
-[Facebook](https://www.facebook.com/donald.mutsun.tsai/) or by [email](mailto:don.m.t.tsai@gmail.com).
+If you notice any bugs, or have any suggestions, feel free to drop an issue [here](https://github.com/MuTsunTsai/box-pleating-studio/issues). \
+If you use BP Studio to create new designs, please share you work with us [here](https://github.com/MuTsunTsai/box-pleating-studio/discussions).

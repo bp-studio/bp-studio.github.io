@@ -23,6 +23,15 @@ svg.icon {
 	color: white;
 }
 
+.search-result:hover .search-result-preview,
+.search-result:hover .search-result-rel-url {
+	color: #eee;
+}
+
+.search-result:hover .search-result-icon {
+	color: lightblue;
+}
+
 .side-bar .nav-list a {
 	color: white;
 }
