@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Home
 nav_exclude: true
+description: Super-complex origami design made easy!
 ---
 
 <h1 class="d-flex mb-5">

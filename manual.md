@@ -10,14 +10,14 @@ nav_order: 3
 
 Start from the upper-left, each button in the toolbar is explained as follows.
 
-- File menu: Create new project, download or share projects, etc.
-- Edit menu: Undo/redo (up to 30 steps), select all; more functions TBD.
-- Setting menu: Display options and app preferences (including language setting).
-- Tools menu: Currently with one additional tool (TreeMaker format importing); more tools TBD.
-- Help menu: About the app, version info, and how to support it.
-- Tree structure: Edit the tree structure of your project.
-- Layout: Edit the Flap and Gadget layout of your project.
-- Option panel (only in mobile version): Opens the option panel. For desktop version the option panel is always in display on the right side.
+- <i class="fas fa-file-alt fa-fw fa-lg"></i> File menu: Create new project, download or share projects, etc.
+- <i class="fas fa-pencil-ruler fa-fw fa-lg"></i> Edit menu: Undo/redo (up to 30 steps), select all; more functions TBD.
+- <i class="fas fa-tasks fa-fw fa-lg"></i> Setting menu: Display options and app preferences (including language setting).
+- <i class="fas fa-tools fa-fw fa-lg"></i> Tools menu: Currently with one additional tool (TreeMaker format importing); more tools TBD.
+- <i class="fas fa-question-circle fa-fw fa-lg"></i> Help menu: About the app, version info, and how to support it.
+- <i class="fas bp-tree fa-fw fa-lg"></i> Tree structure: Edit the tree structure of your project.
+- <i class="fas bp-layout fa-fw fa-lg"></i> Layout: Edit the Flap and Gadget layout of your project.
+- <i class="fas fa-sliders-h fa-fw fa-lg"></i> Option panel (only in mobile version): Opens the option panel. For desktop version the option panel is always in display on the right side.
 
 Right click on the tab (or use the dropdown menu for touch devices)
 will expose actions related to tabs (such as cloning projects and close multiple tabs at once).
