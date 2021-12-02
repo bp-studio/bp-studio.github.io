@@ -19,6 +19,12 @@ svg.icon {
 	}
 }
 
+@media (max-width: 799.98px) {
+	.main-header a {
+		color: white;
+	}
+}
+
 .search-result:hover,
 .site-button:hover,
 .side-bar .nav-list a {
