@@ -8,6 +8,8 @@ color_scheme: bpstudio
 aux_links:
   '<i class="fab fa-github mr-1 fa-2x"></i> GitHub repo':
     - "//github.com/bp-studio/box-pleating-studio"
+  '<i class="fas fa-hand-holding-usd fa-2x"></i> Sponsor':
+    - "//bpstudio.abstreamace.com/donate.htm"
   '<i class="fas fa-rocket mr-1 fa-2x"></i> Launch App':
     - "//bpstudio.abstreamace.com"
 aux_links_new_tab: true
