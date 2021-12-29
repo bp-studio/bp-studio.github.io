@@ -12,16 +12,19 @@ svg.icon {
 	.side-bar,
 	.site-footer {
 		color: lightblue !important;
-	}
-
-	.site-footer a {
-		color: white;
+		a {
+			color: white;
+		}
 	}
 }
 
 @media (max-width: 799.98px) {
 	.main-header a {
 		color: white;
+	}
+
+	.main-content a {
+		white-space: unset;
 	}
 }
 
@@ -31,15 +34,27 @@ svg.icon {
 	color: white;
 }
 
-.search-result:hover .search-result-preview,
-.search-result:hover .search-result-rel-url {
-	color: #eee;
-}
+.search-result:hover {
+	.search-result-preview,
+	.search-result-rel-url {
+		color: #eee;
+	}
 
-.search-result:hover .search-result-icon {
-	color: lightblue;
+	.search-result-icon {
+		color: lightblue;
+	}
 }
 
 .aux-nav-list i {
 	margin-right: 3px;
+}
+
+.main-content {
+	dl {
+		grid-template: auto / auto 1fr;
+	}
+
+	dt::after {
+		content: "";
+	}
 }
