@@ -10,6 +10,7 @@ description: Super-complex origami design made easy!
 
 ![GitHub](https://img.shields.io/github/license/MuTsunTsai/box-pleating-studio)
 ![](https://img.shields.io/badge/platform-ALL-brightgreen)
+![Discord](https://img.shields.io/discord/943493491378507807?color=blue&label=Discord&logo=discord)
 ![GitHub Repo stars](https://img.shields.io/github/stars/MuTsunTsai/box-pleating-studio?style=social)
 
 ## Introduction
@@ -27,3 +28,5 @@ This app is created to help origami designers to blueprint their models in such 
 
 If you notice any bugs, or have any suggestions, feel free to drop an issue [here](https://github.com/MuTsunTsai/box-pleating-studio/issues). \
 If you use BP Studio to create new designs, please share you work with us [here](https://github.com/MuTsunTsai/box-pleating-studio/discussions).
+
+**New**: Join our new [<i class="fab fa-discord"></i> Discord server](https://discord.gg/HkcdTDS4zZ)!
