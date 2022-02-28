@@ -8,6 +8,13 @@ nav_order: 5
 
 These are the original designs using BP Studio that came to my attention or were submitted to me by various designers since the release of BP Studio, in random ordering:
 
+<div id="divG">Loading...</div>
+
+<link rel='stylesheet' id='modula-css'  href='https://origami.abstreamace.com/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=2.6.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://origami.abstreamace.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://origami.abstreamace.com/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.js?ver=2.6.2' id='modula-fancybox-js'></script>
+<script type='text/javascript' src='https://origami.abstreamace.com/wp-content/plugins/modula-best-grid-gallery/assets/js/modula-wf.js?ver=2.6.2' id='modula-wf-js'></script>
+
 {% comment %}
 	這邊利用動態讀取的方法取得《牧村摺紙》網站上的 Modula Gallery。
 	這邊有幾個前提：對方網站上必須設定好 CORS（可以透過 HTTP Headers 外掛來設定），
@@ -26,10 +33,3 @@ These are the original designs using BP Studio that came to my attention or were
 		});
 	}).catch(() => document.getElementById("divG").innerHTML = "Failed to load gallery.");
 </script>
-
-<div id="divG">Loading...</div>
-
-<link rel='stylesheet' id='modula-css'  href='https://origami.abstreamace.com/wp-content/plugins/modula-best-grid-gallery/assets/css/front.css?ver=2.6.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://origami.abstreamace.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://origami.abstreamace.com/wp-content/plugins/modula-best-grid-gallery/assets/js/front/fancybox.js?ver=2.6.2' id='modula-fancybox-js'></script>
-<script type='text/javascript' src='https://origami.abstreamace.com/wp-content/plugins/modula-best-grid-gallery/assets/js/modula-wf.js?ver=2.6.2' id='modula-wf-js'></script>
