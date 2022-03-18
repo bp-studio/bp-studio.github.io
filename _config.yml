@@ -3,7 +3,7 @@ baseurl: ""
 remote_theme: pmarsceill/just-the-docs
 
 logo: "/assets/logo.png"
-color_scheme: bpstudio
+color_scheme: light
 
 aux_links:
   '<i class="fab fa-github mr-1 fa-2x"></i> GitHub repo':
