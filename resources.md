@@ -8,6 +8,10 @@ nav_order: 4
 
 This is a list of resources made by various contributors that I am aware of.
 
+## Talks
+
+- [Introduction to Box Pleating Studio](https://youtu.be/CMgli6Ul7CE) by myself (Spanish translation by Jaciara Grzybowski) to the Sociedad Boliviana de Origami on the 2022 event "Origami Matemáticas II".
+
 ## Tutorial videos
 
 - [Origami Designing in BPStudio - Scorpion](https://www.youtube.com/watch?v=PtJE0rankHc) by [cExplr](https://www.youtube.com/channel/UC-HBfABJOMSUhkgdaNh36lA)
