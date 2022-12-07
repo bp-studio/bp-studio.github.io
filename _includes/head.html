@@ -24,9 +24,15 @@
 	  <script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-  
-		gtag('config', '{{ site.ga_tracking }}'{% unless site.ga_tracking_anonymize_ip == nil %}, { 'anonymize_ip': true }{% endunless %});
+		if(location.hostname=='bp-studio.github.io') {
+			gtag('js', new Date());
+			gtag('config', '{{ site.ga_tracking }}', {
+				page_title: document.title,
+				page_path: location.pathname,
+				app_name: document.title,
+				app_version: "doc"
+			});
+		}
 	  </script>
   
 	{% endif %}
