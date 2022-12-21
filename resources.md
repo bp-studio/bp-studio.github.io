@@ -18,8 +18,12 @@ This is a list of resources made by various contributors that I am aware of.
 - [Bp Studio and Treemaker Crash Course \| Origami design softwares](https://www.youtube.com/watch?v=OCDR8cRvKAY) by [The Plant Psychologist](https://www.youtube.com/channel/UCJPCcyo8mTKdIU8oLMv5WpQ)
 - [Live designing with BP Studio](https://youtu.be/mOXP2FhGHi8) by [Origambel](https://www.youtube.com/channel/UCgRy3dFG5qVFmu0QHZ5uIsQ)
 
-## Articles
+## General articles
+
+- Introduction to Box Pleating Studio (available in [The Paper, issue 138](https://origamiusa.org/thepaper/paper-issue-138-spring-2022)) by myself, which roughly covers the same content as my talk listed above.
+
+## Design walkthrough articles
 
 - [从浴衣海3.0看蛇腹人物设计——实践篇](https://www.bilibili.com/read/cv10238548) (Chinese) by [EreRe_](https://space.bilibili.com/12869916)
-- Introduction to Box Pleating Studio (available in [The Paper, issue 138](https://origamiusa.org/thepaper/paper-issue-138-spring-2022)) by myself, which roughly covers the same content as my talk listed above.
 - [Origami Scorpion Design from Start to Finish](https://cexplr.github.io/blog/origami-scorpion-design-from-start-to-finish) by [cExplr](https://cexplr.github.io/)
+- [Origami Coconut Crab](https://wg-origami.blogspot.com/2021/02/origami-coconut-crab.html) by [William Gozali](https://wg-origami.blogspot.com/)
