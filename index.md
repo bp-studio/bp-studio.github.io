@@ -22,11 +22,10 @@ with the help of stretching gadgets (such as Kamiya patterns and the more genera
 it is now possible for box pleating to achieve efficiency nearly as good as the optimal circle packing.
 This app is created to help origami designers to blueprint their models in such systems.
 
-**New**: Check out [The story of Box Pleating Studio](https://origami.abstreamace.com/2021/06/02/the-story-of-box-pleating-studio/) at the author's blog!
+Check out [The story of Box Pleating Studio](https://origami.abstreamace.com/2021/06/02/the-story-of-box-pleating-studio/) at the author's blog!
 
 ## Feedbacks are greatly appreciated!
 
-If you notice any bugs, or have any suggestions, feel free to drop an issue [here](https://github.com/MuTsunTsai/box-pleating-studio/issues). \
-If you use BP Studio to create new designs, please share you work with us [here](https://github.com/MuTsunTsai/box-pleating-studio/discussions).
-
-**New**: Join our new [<i class="fab fa-discord"></i> Discord server](https://discord.gg/HkcdTDS4zZ)!
+Our [Discord server](https://discord.gg/HkcdTDS4zZ) will be our main channel for all sorts of discussions,
+but of course you could also use GitHub [Issues](https://github.com/bp-studio/box-pleating-studio/issues)
+and [Discussions](https://github.com/bp-studio/box-pleating-studio/discussions) as well.

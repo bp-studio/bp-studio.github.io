@@ -578,7 +578,7 @@
   
 	  // Existing slides (for current, next and previous gallery items)
 	  self.slides = {};
-  
+  //console.log(content);
 	  // Create group elements
 	  self.addContent(content);
   
@@ -636,7 +636,7 @@
 		  $("head").append(
 			'<style id="modula-fancybox-style-noscroll" type="text/css">.compensate-for-scrollbar{margin-right:' +
 			(window.innerWidth - document.documentElement.clientWidth) +
-			"px;}</style>"
+			"px;overflow:hidden;}</style>"
 		  );
   
 		  $("body").addClass("compensate-for-scrollbar");
@@ -2023,8 +2023,8 @@
 		  })
 		  .addClass("modula-fancybox-image")
 		  .attr("src", slide.src)
+		  .attr("aria-describedby", 'modula-caption-' + slide.index)
 		  .appendTo(slide.$content);
-  
   
 		if ((img.complete || img.readyState == "complete") && $img.naturalWidth && $img.naturalHeight) {
 		  $img.trigger("load");
@@ -3047,7 +3047,7 @@
 		  $caption
 			.children()
 			.eq(0)
-			.html(caption);
+			.html('<p id="modula-caption-'+ current.index +'" class="modula-fancybox-caption__text">' + caption + '</p>');
 		} else {
 		  self.$caption = null;
 		}
@@ -5213,16 +5213,22 @@
 		  if (!src && item.type === "image") {
 			src = item.src;
 		  }
+		  var imageCaption = item.opts.caption.replace(/<p>|<\/p>/igm, '');
   
-		  list.push(
-			'<a href="javascript:;" tabindex="0" data-index="' +
+	  var imageCaption = imageCaption.replace(/[\u00A0-\u9999<>\&]/g, function(i) {
+		return '&#'+i.charCodeAt(0)+';';
+	  });
+  
+		  list.push( '<a href="javascript:;" role="button" aria-label="Click to show image titled '+
+			imageCaption +
+			'" tabindex="0" data-index="' +
 			i +
 			'"' +
 			(src && src.length ? ' style="background-image:url(' + src + ')"' : 'class="modula-fancybox-thumbs-missing"') +
-			"></a>"
-		  );
-		});
+			"></a>" );
+		  });
   
+   
 		self.$list[0].innerHTML = list.join("");
   
 		if (self.opts.axis === "x") {
@@ -5435,10 +5441,10 @@
   
 		  var text = ( undefined != jQuery( current.$image ).attr( 'title' )  ) ? jQuery( current.$image ).attr( 'title' ) : '';
   
-		  if ( '' ==  text ) {
+		  if ( '' == text && instance.$caption && typeof instance.$caption.text !== "undefined" ) {
 			text = instance.$caption.text();
 		  }
-  
+		  
 		  tpl += current.opts.shareBtnTpl[value]
 			  .replace( /\{\{media\}\}/g, current.type === "image" ? encodeURIComponent( current.src ) : "" )
 			  .replace( /\{\{modulaShareUrl\}\}/g, encodeURIComponent( url ) )

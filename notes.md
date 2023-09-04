@@ -29,7 +29,6 @@ They soon became good friends and together they generalized the notion of Pythag
 and it was published in 7OSME.
 Tsai lives in Taiwan and makes a living by doing full-stack developing.
 He particularly specializes in C# and TypeScript.
-Tsai is also the author of the reactive framework Shrewd,
-which is the core powering Box Pleating Studio.
+He is also a major contributor of the [Oriedita](https://oriedita.github.io/) project.
 
-**New**: Visit his new blog [Tsai Origami](https://origami.abstreamace.com/) for more!
+Visit his new blog [Tsai Origami](https://origami.abstreamace.com/) for more!

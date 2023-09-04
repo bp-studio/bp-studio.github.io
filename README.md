@@ -4,10 +4,10 @@ This is the source for the BP Studio website at [bp-studio.github.io](https://bp
 
 ## Running locally
 
-If you want to run this website on your computer you need to install Ruby and run the following commands in the current directory.
+If you want to run this website locally, you need to:
 
-```
-bundle exec jekyll serve
-```
+1. Install [Ruby](https://www.ruby-lang.org/).
+2. Run `bundle install` to install dependencies. Could take like 30 minutes or so.
+3. Run `bundle exec jekyll serve`.
 
-The site is now available at [localhost:4000](http://localhost:4000).
+The site will then be available at [localhost:4000](http://localhost:4000).

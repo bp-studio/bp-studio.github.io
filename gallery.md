@@ -6,7 +6,9 @@ nav_order: 5
 
 # Gallery
 
-These are the original designs using (or partly using) BP Studio that came to my attention or were submitted to me by various designers since the release of BP Studio, in random ordering:
+These are the original designs using (or partly using)
+BP Studio that came to my attention or were submitted to me by various designers since the release of BP Studio,
+in random ordering:
 
 <div id="divG">Loading...</div>
 
@@ -15,12 +17,12 @@ These are the original designs using (or partly using) BP Studio that came to my
 <script src='/assets/gallery/fancybox.js'></script>
 <script src='/assets/gallery/modula-wf.js'></script>
 
-{% comment %}
-	這邊利用動態讀取的方法取得《牧村摺紙》網站上的 Modula Gallery。
-	這邊有幾個前提：對方網站上必須設定好 CORS（可以透過 HTTP Headers 外掛來設定），
-	而且 fetch 的網址必須是直接傳回 200 的標準網址，不能有 301
-	（雖然 fetch 預設的行為是 follow 轉址沒錯，但是 WordPress 在轉址的時候似乎沒辦法發送 CORS header）。
-{% endcomment %}
+<!--
+	Here we use fetching to obtain the Modula Gallery on the website Tsai Origami.
+	To do so, the target website must CORS ready (can be setup using plugin HTTP Headers),
+	and the URL for fetching must directly returns 200 without 301
+	(although fetch will follow redirection, but WordPress won't send CORS headers in that case).
+-->
 <script>
 	fetch("https://origami.abstreamace.com/gallery/").then(async (res) => {
 		const html = await res.text();
