@@ -10,6 +10,8 @@ description: Super-complex origami design made easy!
 
 ![GitHub](https://img.shields.io/github/license/MuTsunTsai/box-pleating-studio)
 ![](https://img.shields.io/badge/platform-ALL-brightgreen)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MuTsunTsai/box-pleating-studio)
+![GitHub top language](https://img.shields.io/github/languages/top/MuTsunTsai/box-pleating-studio)
 ![Discord](https://img.shields.io/discord/943493491378507807?color=blue&label=Discord&logo=discord)
 ![GitHub Repo stars](https://img.shields.io/github/stars/MuTsunTsai/box-pleating-studio?style=social)
 

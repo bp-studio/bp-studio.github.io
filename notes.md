@@ -14,13 +14,17 @@ nav_order: 6
 
 ## Acknowledgement
 
-The author would like to specially thank the following people, in no particular ordering:
-- Robert J. Lang for his work that inspired the idea of GOPS,
+The author would like to specially thank the following people/parties, in no particular ordering:
+
+- [Robert J. Lang](https://langorigami.com/) for his work that inspired the idea of GOPS,
 and for his continuing support and encouragement throughout these years.
-- Jürg Lehni and Jonathan Puckey, for creating [paper.js](http://paperjs.org/),
-the powerful and efficient vector graphics library that powers BP Studio.
-- Lucas Tay Kiat Loong, for so eagerly volunteering to test BP Studio,
+- [Lucas Tay Kiat Loong](https://cexplr.github.io/), for so eagerly volunteering to test BP Studio,
 helping catching many critical and subtle bugs, and providing many invaluable feedbacks.
+- [Jason S. Ku](https://github.com/origamimagiro), for his insights on the subject of computational geometry.
+- Mat Groves and [GoodBoyDigital](https://www.goodboydigital.com), for maintaining [PixiJS](https://pixijs.com/),
+the graphics engine that powers BP Studio.
+- [BrowserStack](https://www.browserstack.com/), for enrolling BP Studio into its Open Source Program.
+It would be financially impossible for BP Studio to perform compatibility tests without it.
 
 ## About the author
 
@@ -31,4 +35,4 @@ Tsai lives in Taiwan and makes a living by doing full-stack developing.
 He particularly specializes in C# and TypeScript.
 He is also a major contributor of the [Oriedita](https://oriedita.github.io/) project.
 
-Visit his new blog [Tsai Origami](https://origami.abstreamace.com/) for more!
+Visit his blog [Tsai Origami](https://origami.abstreamace.com/) for more!
