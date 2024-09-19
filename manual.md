@@ -53,7 +53,7 @@ Once you have the desired structure,
 go to the layout view and start experimenting with different combinations of flap locations.
 BP Studio will try its best to find stretching patterns for those flaps that has overlapping with their corresponding rectangles
 (but not with their corresponding circles) and try to determine the shape of all flaps and rivers automatically.
-For a very brief account of the method of generating stretch patterns used in this app, see [[2]](notes.html#b2).
+For a very brief account of the method of generating stretch patterns used in this app, see [[2]](notes.html#b2) and [[3]](notes.html#b3).
 
 When you finish your design, you can save your project,
 save the entire workspace, or export the design to CP formats for further editing in other softwares

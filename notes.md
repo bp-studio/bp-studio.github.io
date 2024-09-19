@@ -12,6 +12,8 @@ nav_order: 6
 
 <span id="b2">[2]</span>: Robert J. Lang and Mu-Tsun Tsai, *Generalized Offset Pythagorean Stretches in Box-Pleated Uniaxial Bases*, The Proceedings from the 7th International Meeting on Origami in Science, Mathematics, and Education, Vol.2, 2018, pp. 591-606.
 
+<span id="b3">[3]</span>: Mu-Tsun Tsai, *On the Constructions of Generalized Offset Pythagorean Stretch Patterns*, The Proceedings from the 8th International Meeting on Origami in Science, Mathematics, and Education, 2024, to appear.
+
 ## Acknowledgement
 
 The author would like to specially thank the following people/parties, in no particular ordering:
