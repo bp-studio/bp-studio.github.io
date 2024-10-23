@@ -20,7 +20,7 @@ Start from the upper-left, each button in the toolbar is explained as follows.
 : Setting menu: Display options and app preferences (language, theme, color scheme, etc.).
 
 <i class="fas fa-tools fa-fw fa-lg"></i>
-: Tools menu: Import from TreeMaker format, and export to CP format.
+: Tools menu: Optimize layout, import from [TreeMaker](https://langorigami.com/article/treemaker/) format, and export to CP format.
 
 <i class="fas fa-question-circle fa-fw fa-lg"></i>
 : Help menu: About the app, version info, and how to support it.
@@ -66,6 +66,20 @@ The default colorings of hinges, ridges, and axial-parallel creases follows Lang
 but you may also customize them in the preference dialog.
 For clarity, only the axial-parallel creases of the stretching patterns are shown,
 but you should have no problem figuring out the rest by looking at the ridge creases.
+
+## Layout optimization
+
+Under the tools menu one will find "Optimize layout" introduced in upcoming v0.7.
+This tool uses methods similar to those of TreeMaker to find efficient packing solution for your design.
+There are two layout methods: either use your current layout as reference
+(and the optimizer will try to improve it as much as possible),
+or let the optimizer generate several random layouts and use the most efficient one among them.
+In the first method, there's also an option "Try variations of the current layouts",
+which will also try slightly different arrangements of flaps to see if the efficiency can be further improved.
+
+Tip: Most stages of the computation can be skipped. By skipping some of the steps,
+you can also use this tool to simply spread the flaps apart after you have done constructing the tree.
+However, doing so could lead to less efficient layouts and invalid overlappings of flaps.
 
 ## Current limitations
 
