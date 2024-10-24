@@ -77,6 +77,10 @@ or let the optimizer generate several random layouts and use the most efficient 
 In the first method, there's also an option "Try variations of the current layouts",
 which will also try slightly different arrangements of flaps to see if the efficiency can be further improved.
 
+Keep in mind that the optimizer is purely numerical and does not concern about the aesthetics of the packing,
+so the result can often be quite messy (though valid).
+Typically you will have to manually rearrange the result to get something clean.
+
 Tip: Most stages of the computation can be skipped. By skipping some of the steps,
 you can also use this tool to simply spread the flaps apart after you have done constructing the tree.
 However, doing so could lead to less efficient layouts and invalid overlappings of flaps.
