@@ -38,3 +38,6 @@ He particularly specializes in C# and TypeScript.
 He is also a major contributor of the [Oriedita](https://oriedita.github.io/) project.
 
 Visit his blog [Tsai Origami](https://origami.abstreamace.com/) for more!
+
+Also check out [Avon Koh](https://www.youtube.com/@origameow)'s special [interview](https://youtu.be/-1usLhc3RNw) with the author!
+

@@ -19,7 +19,7 @@ in random ordering:
 
 <!--
 	Here we use fetching to obtain the Modula Gallery on the website Tsai Origami.
-	To do so, the target website must CORS ready (can be setup using plugin HTTP Headers),
+	To do so, the target website must be CORS ready (can be setup using plugin HTTP Headers),
 	and the URL for fetching must directly returns 200 without 301
 	(although fetch will follow redirection, but WordPress won't send CORS headers in that case).
 -->

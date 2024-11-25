@@ -14,13 +14,13 @@ Start from the upper-left, each button in the toolbar is explained as follows.
 : File menu: Create new project, download or share projects, etc.
 
 <i class="fas fa-pencil-ruler fa-fw fa-lg"></i>
-: Edit menu: Undo/redo (up to 30 steps), select all; more functions TBD.
+: Edit menu: Undo/redo (up to 30 steps), subdivide grid, rotate/flip, select/unselect all.
 
 <i class="fas fa-tasks fa-fw fa-lg"></i>
 : Setting menu: Display options and app preferences (language, theme, color scheme, etc.).
 
 <i class="fas fa-tools fa-fw fa-lg"></i>
-: Tools menu: Optimize layout, import from [TreeMaker](https://langorigami.com/article/treemaker/) format, and export to CP format.
+: Tools menu: Optimize layout, import from [TreeMaker](https://langorigami.com/article/treemaker/) format, and CP exporting.
 
 <i class="fas fa-question-circle fa-fw fa-lg"></i>
 : Help menu: About the app, version info, and how to support it.
@@ -55,8 +55,8 @@ BP Studio will try its best to find stretching patterns for those flaps that has
 (but not with their corresponding circles) and try to determine the shape of all flaps and rivers automatically.
 For a very brief account of the method of generating stretch patterns used in this app, see [[2]](notes.html#b2) and [[3]](notes.html#b3).
 
-When you finish your design, you can save your project,
-save the entire workspace, or export the design to CP formats for further editing in other softwares
+When you finish your design, you can save your project, save the entire workspace,
+or export the design to CP/[FOLD](https://github.com/edemaine/fold) formats for further editing in other softwares
 (such as [Oriedita](https://oriedita.github.io/)).
 Note that CP exporting is not intended to generate flat-foldable CPs
 (which is beyond the scope of BP Studio for now),
@@ -69,7 +69,7 @@ but you should have no problem figuring out the rest by looking at the ridge cre
 
 ## Layout optimization
 
-Under the tools menu one will find "Optimize layout" introduced in upcoming v0.7.
+Under the tools menu one will find "Optimize layout" introduced in v0.7.
 This tool uses methods similar to those of TreeMaker to find efficient packing solution for your design.
 There are two layout methods: either use your current layout as reference
 (and the optimizer will try to improve it as much as possible),
@@ -100,4 +100,4 @@ and transform them into the latter in your folding process.
 Meandering rivers might be represented similarly by using stub flaps,
 or you can just pretend that it's there and fold your thing anyway 😉
 
-Other features such as tilted grid, exporting to more formats, etc. are also planned.
+Other features such as tilted grid, optimization conditions, meandering support, etc. are also planned.
