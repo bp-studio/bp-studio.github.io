@@ -14,13 +14,15 @@ This is a list of resources made by various contributors that I am aware of.
 
 ## Tutorial videos
 
-- [Origami Designing in BPStudio - Scorpion](https://www.youtube.com/watch?v=PtJE0rankHc) by [cExplr](https://www.youtube.com/channel/UC-HBfABJOMSUhkgdaNh36lA)
-- [Bp Studio and Treemaker Crash Course \| Origami design softwares](https://www.youtube.com/watch?v=OCDR8cRvKAY) by [The Plant Psychologist](https://www.youtube.com/channel/UCJPCcyo8mTKdIU8oLMv5WpQ)
+- [Origami Designing in BPStudio - Scorpion](https://youtu.be/PtJE0rankHc) by [cExplr](https://www.youtube.com/channel/UC-HBfABJOMSUhkgdaNh36lA)
+- [Bp Studio and Treemaker Crash Course \| Origami design softwares](https://youtu.be/OCDR8cRvKAY) by [The Plant Psychologist](https://www.youtube.com/channel/UCJPCcyo8mTKdIU8oLMv5WpQ)
 - [Live designing with BP Studio](https://youtu.be/mOXP2FhGHi8) by [Origambel](https://www.youtube.com/channel/UCgRy3dFG5qVFmu0QHZ5uIsQ)
+- [DOAZ#3 폴리곤 패킹과 박스 플릿의 이해 (T2) [자막]](https://youtu.be/4SvFRTyEyqM) (Korean with English subtitle) by [Paper Shaper Lee U](https://www.youtube.com/@papershaperleeu5586), briefly covering the basics of BP Studio and pythas.
 
 ## General articles
 
 - Introduction to Box Pleating Studio (available in [The Paper, issue 138](https://origamiusa.org/thepaper/paper-issue-138-spring-2022)) by myself, which roughly covers the same content as my talk listed above.
+- [Box pleating studio 로 박스플릿 창작 쉽게 하는 법 (스압)](https://m.cafe.naver.com/yortapaper/135321) (Korean) by 브루니, a step-by-step tutorial.
 
 ## Design walkthrough articles
 

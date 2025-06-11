@@ -18,3 +18,4 @@ aux_links_new_tab: true
 exclude:
  - Gemfile
  - Gemfile.lock
+ - README.md
