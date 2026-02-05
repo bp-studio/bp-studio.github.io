@@ -18,6 +18,8 @@ This is a list of resources made by various contributors that I am aware of.
 - [Bp Studio and Treemaker Crash Course \| Origami design softwares](https://youtu.be/OCDR8cRvKAY) by [The Plant Psychologist](https://www.youtube.com/channel/UCJPCcyo8mTKdIU8oLMv5WpQ)
 - [Live designing with BP Studio](https://youtu.be/mOXP2FhGHi8) by [Origambel](https://www.youtube.com/channel/UCgRy3dFG5qVFmu0QHZ5uIsQ)
 - [DOAZ#3 폴리곤 패킹과 박스 플릿의 이해 (T2) [자막]](https://youtu.be/4SvFRTyEyqM) (Korean with English subtitle) by [Paper Shaper Lee U](https://www.youtube.com/@papershaperleeu5586), briefly covering the basics of BP Studio and pythas.
+- [기미로는 종이접기 할 때 어떤 프로그램을 쓸까?](https://youtu.be/Za7KEeic24g) (Korean with English subtitle) by 
+[기미로](https://www.youtube.com/@origamikimiro) (Origami_Kimiro), briefly mentioned BP Studio among several leading origami softwares. Kimiro is arguably the leading expert in utilizing BP Studio.
 
 ## General articles
 

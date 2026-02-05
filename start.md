@@ -12,7 +12,7 @@ Box Pleating Studio is not for origami beginners.
 In order to fully understand the pattern it creates and be able to fold it,
 you must be considerably familiar with the theory of uniaxial box pleating bases.
 You will find everything you need to know in Chapter 13 and 14 of Robert J. Lang's remarkable book
-(See [[1]](notes.html#b1) in the bibliography section).
+(See [[1]](notes.html#b1) in the bibliography section), or check out other tutorials listed in the [Resources](resources.md) section.
 
 ## How to get the app
 
