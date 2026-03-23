@@ -1,0 +1,92 @@
+# Manual de usuario
+
+## La barra de herramientas
+
+Comenzando desde la parte superior izquierda, cada botón de la barra de herramientas se explica a continuación.
+
+<dl className="toolbar-list">
+<dt><i className="bp-file-alt"></i></dt>
+<dd>**Menú de archivos**: Crear un nuevo proyecto, descargar o compartir proyectos, etc.</dd>
+<dt><i className="bp-pencil-ruler"></i></dt>
+<dd>**Menú de edición**: Deshacer/rehacer (hasta 30 pasos), subdividir cuadrícula, rotar/voltear, seleccionar/deseleccionar todo.</dd>
+<dt><i className="bp-tasks"></i></dt>
+<dd>**Menú de configuración**: Opciones de visualización y preferencias de la aplicación (idioma, tema, esquema de colores, etc.).</dd>
+<dt><i className="bp-tools"></i></dt>
+<dd>**Menú de herramientas**: Optimizar el diseño, importar desde el formato [TreeMaker](https://langorigami.com/article/treemaker/) y exportar CP.</dd>
+<dt><i className="bp-question-circle"></i></dt>
+<dd>**Menú de ayuda**: Acerca de la aplicación, información de versión y cómo apoyarla.</dd>
+<dt><i className="bp-tree"></i></dt>
+<dd>**Estructura de árbol**: Editar la estructura de árbol de tu proyecto.</dd>
+<dt><i className="bp-layout"></i></dt>
+<dd>**Diseño**: Editar el diseño de solapas y gadgets de tu proyecto.</dd>
+<dt><i className="bp-sliders-h"></i></dt>
+<dd>**Panel de opciones** (solo en la versión móvil): Abre el panel de opciones. En la versión de escritorio, el panel de opciones siempre está visible en el lado derecho.</dd>
+</dl>
+
+Hacer clic derecho en la pestaña (o usar el menú desplegable en dispositivos táctiles)
+mostrará las acciones relacionadas con las pestañas (como clonar proyectos y cerrar múltiples pestañas a la vez).
+Arrastra las pestañas para reordenarlas.
+
+## Cómo usar
+
+Al crear un nuevo proyecto, verás un árbol básico con dos aristas
+(que es el número mínimo de aristas permitido en la aplicación para que tenga sentido estructural).
+Primero, debes decidir cuál debe ser la estructura de tu modelo.
+Para editar el árbol, haz clic en cualquier nodo y usa los comandos del panel de opciones para modificar el árbol.
+Puedes añadir nodos, eliminar nodos hoja, modificar las longitudes de las aristas
+y realizar algunas operaciones avanzadas como dividir aristas y fusionar vértices finales.
+También puedes reorganizar la posición de los nodos en tu hoja arrastrándolos.
+También se sugiere que nombres las hojas para ayudar a identificarlas con las solapas.
+
+Una vez que tengas la estructura deseada,
+ve a la vista de diseño y comienza a experimentar con diferentes combinaciones de ubicaciones de solapas.
+BP Studio intentará lo mejor posible encontrar patrones de estiramiento para aquellas solapas que se superpongan con sus correspondientes rectángulos
+(pero no con sus correspondientes círculos) e intentará determinar automáticamente la forma de todas las solapas y ríos.
+Para un breve resumen del método de generación de patrones de estiramiento utilizado en esta aplicación, véase [[2]](/es/notes#bibliografía) y [[3]](/es/notes#bibliografía).
+
+Cuando termines tu diseño, puedes guardar tu proyecto, guardar todo el espacio de trabajo
+o exportar el diseño a formatos CP/[FOLD](https://github.com/edemaine/fold) para editarlo en otros programas
+(como [Oriedita](https://oriedita.github.io/)).
+Ten en cuenta que la exportación de CP no está destinada a generar CPs plegables planos
+(lo cual está fuera del alcance de BP Studio por ahora),
+sino a darte un punto de partida sin tener que volver a dibujar todo desde cero.
+
+El coloreado predeterminado de los pliegues de bisagra, pliegues de cresta y pliegues axiales-paralelos sigue la convención de Lang en su libro,
+pero también puedes personalizarlos en el diálogo de preferencias.
+Para mayor claridad, solo se muestran los pliegues axiales-paralelos de los patrones de estiramiento,
+pero no deberías tener problemas para descifrar el resto mirando los pliegues de cresta.
+
+## Optimización del diseño
+
+En el menú de herramientas se encuentra "Optimizar el diseño", introducido en la v0.7.
+Esta herramienta utiliza métodos similares a los de TreeMaker para encontrar una solución de empaquetado eficiente para tu diseño.
+Hay dos métodos de diseño: usar tu diseño actual como referencia
+(y el optimizador intentará mejorarlo tanto como sea posible),
+o dejar que el optimizador genere varios diseños aleatorios y use el más eficiente entre ellos.
+En el primer método, también hay una opción "Probar variaciones del diseño actual",
+que también intentará disposiciones ligeramente diferentes de solapas para ver si la eficiencia puede mejorarse aún más.
+
+Ten en cuenta que el optimizador es puramente numérico y no se preocupa por la estética del empaquetado,
+por lo que el resultado puede ser bastante desordenado (aunque válido).
+Normalmente tendrás que reorganizar manualmente el resultado para obtener algo ordenado.
+
+Consejo: La mayoría de las etapas del cálculo se pueden omitir. Al omitir algunos pasos,
+también puedes usar esta herramienta simplemente para separar las solapas después de haber construido el árbol.
+Sin embargo, hacerlo podría llevar a diseños menos eficientes y superposiciones no válidas de solapas.
+
+## Limitaciones actuales
+
+No siempre es posible que BP Studio encuentre patrones de estiramiento funcionales en cada diseño válido.
+Hasta ahora, el autor ha implementado suficientes algoritmos para encontrar patrones para cualquier diseño válido con dos solapas,
+y para la mayoría de los diseños válidos con tres solapas.
+El autor continuará implementando más algoritmos para patrones más complicados en el futuro.
+
+Por el momento, BP Studio no ha implementado la noción de elevación, estructuras de unidad semi-integral o ríos serpenteantes.
+Pero puedes ensanchar o elevar tus solapas ajustando su anchura o altura,
+y usarlas para crear elevaciones en tu modelo final.
+También puedes usar estructuras integrales para representar aproximadamente el espacio ocupado por las estructuras semi-integrales,
+y transformarlas en estas últimas en tu proceso de plegado.
+Los ríos serpenteantes pueden representarse de manera similar usando solapas stub,
+o simplemente puedes fingir que están ahí y plegar de todas formas.
+
+Otras funciones como cuadrícula inclinada, condiciones de optimización, soporte para serpenteos, etc. también están planificadas.

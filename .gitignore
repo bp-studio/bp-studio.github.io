@@ -1,1 +1,7 @@
-_site
+node_modules/
+doc_build/
+.temp/
+
+# AI
+CLAUDE.md
+.claude/

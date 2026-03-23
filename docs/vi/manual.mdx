@@ -1,0 +1,92 @@
+# Hướng dẫn sử dụng
+
+## Thanh công cụ
+
+Bắt đầu từ góc trên bên trái, mỗi nút trên thanh công cụ được giải thích như sau.
+
+<dl className="toolbar-list">
+<dt><i className="bp-file-alt"></i></dt>
+<dd>**Menu tệp**: Tạo dự án mới, tải xuống hoặc chia sẻ dự án, v.v.</dd>
+<dt><i className="bp-pencil-ruler"></i></dt>
+<dd>**Menu chỉnh sửa**: Hoàn tác/làm lại (tối đa 30 bước), chia nhỏ lưới, xoay/lật, chọn/bỏ chọn tất cả.</dd>
+<dt><i className="bp-tasks"></i></dt>
+<dd>**Menu cài đặt**: Tùy chọn hiển thị và tùy chọn ứng dụng (ngôn ngữ, giao diện, bảng màu, v.v.).</dd>
+<dt><i className="bp-tools"></i></dt>
+<dd>**Menu công cụ**: Tối ưu hóa bố cục, nhập từ định dạng [TreeMaker](https://langorigami.com/article/treemaker/) và xuất CP.</dd>
+<dt><i className="bp-question-circle"></i></dt>
+<dd>**Menu trợ giúp**: Thông tin về ứng dụng, thông tin phiên bản và cách hỗ trợ.</dd>
+<dt><i className="bp-tree"></i></dt>
+<dd>**Cấu trúc cây**: Chỉnh sửa cấu trúc cây của dự án.</dd>
+<dt><i className="bp-layout"></i></dt>
+<dd>**Bố trí**: Chỉnh sửa bố trí Nhánh và Gadget của dự án.</dd>
+<dt><i className="bp-sliders-h"></i></dt>
+<dd>**Bảng tùy chọn** (chỉ trong phiên bản di động): Mở bảng tùy chọn. Đối với phiên bản máy tính để bàn, bảng tùy chọn luôn hiển thị ở phía bên phải.</dd>
+</dl>
+
+Nhấp chuột phải vào tab (hoặc sử dụng menu thả xuống cho thiết bị cảm ứng)
+sẽ hiển thị các hành động liên quan đến tab (như nhân bản dự án và đóng nhiều tab cùng lúc).
+Kéo các tab để sắp xếp lại thứ tự.
+
+## Cách sử dụng
+
+Khi bạn tạo một dự án mới, bạn sẽ thấy một cây cơ bản với hai cạnh
+(đây là số cạnh tối thiểu được phép trong ứng dụng để có ý nghĩa cấu trúc).
+Đầu tiên, bạn nên quyết định cấu trúc của mô hình.
+Để chỉnh sửa cây, nhấp vào bất kỳ nút nào và sử dụng các lệnh trong Bảng tùy chọn để sửa đổi cây.
+Bạn có thể thêm nút, xóa nút lá, sửa đổi độ dài của các cạnh,
+và thực hiện một số thao tác nâng cao như chia cạnh và hợp nhất các đỉnh cuối.
+Bạn cũng có thể sắp xếp lại vị trí của các nút trên tờ giấy bằng cách kéo chúng xung quanh.
+Nên đặt tên cho các lá để giúp nhận dạng chúng với các nhánh.
+
+Khi bạn đã có cấu trúc mong muốn,
+hãy chuyển sang chế độ xem bố trí và bắt đầu thử nghiệm các tổ hợp vị trí nhánh khác nhau.
+BP Studio sẽ cố gắng hết sức để tìm các mẫu căng cho những nhánh có sự chồng lấp với hình chữ nhật tương ứng
+(nhưng không với vòng tròn tương ứng) và cố gắng xác định hình dạng của tất cả các nhánh và sông một cách tự động.
+Để có một tóm tắt ngắn gọn về phương pháp tạo mẫu căng được sử dụng trong ứng dụng này, xem [[2]](/vi/notes#tài-liệu-tham-khảo) và [[3]](/vi/notes#tài-liệu-tham-khảo).
+
+Khi bạn hoàn thành thiết kế, bạn có thể lưu dự án, lưu toàn bộ không gian làm việc,
+hoặc xuất thiết kế sang định dạng CP/[FOLD](https://github.com/edemaine/fold) để chỉnh sửa thêm trong các phần mềm khác
+(như [Oriedita](https://oriedita.github.io/)).
+Lưu ý rằng xuất CP không nhằm mục đích tạo ra CP có thể gấp phẳng
+(điều này nằm ngoài phạm vi của BP Studio hiện tại),
+mà để cung cấp cho bạn một điểm khởi đầu mà không cần phải vẽ lại mọi thứ từ đầu.
+
+Màu mặc định của nếp gấp bản lề, nếp gấp ở sườn và nếp gấp trục song song theo quy ước của Lang trong sách của ông,
+nhưng bạn cũng có thể tùy chỉnh chúng trong hộp thoại tùy chọn.
+Để rõ ràng, chỉ hiển thị các nếp gấp trục song song của các mẫu căng,
+nhưng bạn sẽ không gặp khó khăn trong việc tìm ra phần còn lại bằng cách xem các nếp gấp ở sườn.
+
+## Tối ưu hóa bố cục
+
+Trong Menu công cụ có "Tối ưu hóa bố cục" được giới thiệu trong v0.7.
+Công cụ này sử dụng các phương pháp tương tự như TreeMaker để tìm giải pháp đóng gói hiệu quả cho thiết kế của bạn.
+Có hai phương pháp bố trí: sử dụng bố trí hiện tại của bạn làm tham chiếu
+(và trình tối ưu hóa sẽ cố gắng cải thiện nó nhiều nhất có thể),
+hoặc để trình tối ưu hóa tạo ra một số bố trí ngẫu nhiên và sử dụng bố trí hiệu quả nhất trong số đó.
+Trong phương pháp đầu tiên, cũng có tùy chọn "Thử các biến thể của bố trí hiện tại",
+sẽ thử các cách sắp xếp nhánh hơi khác nhau để xem liệu hiệu suất có thể được cải thiện thêm hay không.
+
+Hãy nhớ rằng trình tối ưu hóa hoàn toàn là số và không quan tâm đến tính thẩm mỹ của việc đóng gói,
+vì vậy kết quả thường có thể khá lộn xộn (dù hợp lệ).
+Thông thường bạn sẽ phải sắp xếp lại kết quả theo cách thủ công để có được thứ gì đó gọn gàng.
+
+Mẹo: Hầu hết các giai đoạn tính toán có thể bị bỏ qua. Bằng cách bỏ qua một số bước,
+bạn cũng có thể sử dụng công cụ này để đơn giản là phân tán các nhánh ra sau khi bạn đã xây dựng xong cây.
+Tuy nhiên, làm như vậy có thể dẫn đến các bố trí kém hiệu quả hơn và sự chồng lấp không hợp lệ của các nhánh.
+
+## Các hạn chế hiện tại
+
+BP Studio không phải lúc nào cũng tìm được mẫu căng hoạt động trong mọi bố trí hợp lệ.
+Cho đến nay tác giả đã triển khai đủ thuật toán để tìm mẫu cho bất kỳ bố trí hợp lệ nào có hai nhánh,
+và cho hầu hết các bố trí hợp lệ có ba nhánh.
+Tác giả sẽ tiếp tục triển khai thêm thuật toán cho các mẫu phức tạp hơn trong tương lai.
+
+Hiện tại, BP Studio chưa triển khai khái niệm về cao trình, cấu trúc đơn vị nửa nguyên, hay sông ngoằn ngoèo.
+Nhưng bạn có thể mở rộng hoặc nâng cao các nhánh của mình bằng cách đặt chiều rộng hoặc chiều cao của chúng,
+và sử dụng chúng để tạo cao trình trong mô hình cuối cùng của bạn.
+Bạn cũng có thể sử dụng cấu trúc nguyên để đại diện sơ bộ cho không gian bị chiếm bởi cấu trúc nửa nguyên,
+và chuyển đổi chúng thành loại sau trong quá trình gấp.
+Sông ngoằn ngoèo có thể được biểu diễn tương tự bằng cách sử dụng nhánh stub,
+hoặc bạn có thể giả vờ rằng nó tồn tại và gấp bình thường.
+
+Các tính năng khác như lưới nghiêng, điều kiện tối ưu hóa, hỗ trợ ngoằn ngoèo, v.v. cũng đang được lên kế hoạch.

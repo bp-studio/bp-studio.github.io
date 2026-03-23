@@ -1,0 +1,54 @@
+import React from "react";
+
+# Gallery
+
+These are the original designs using (or partly using)
+BP Studio that came to my attention or were submitted to me by various designers since the release of BP Studio,
+in random ordering:
+
+export const Gallery = () => {
+	const ref = React.useRef(null);
+	React.useEffect(() => {
+		const container = ref.current;
+		if (!container) return;
+
+		const link = document.createElement("link");
+		link.rel = "stylesheet";
+		link.href = "/gallery/front.css";
+		document.head.appendChild(link);
+
+		const loadScript = (src) => new Promise((resolve, reject) => {
+			const s = document.createElement("script");
+			s.src = src;
+			s.onload = resolve;
+			s.onerror = reject;
+			document.body.appendChild(s);
+		});
+
+		(async () => {
+			try {
+				await loadScript("/gallery/jquery.min.js");
+				await loadScript("/gallery/fancybox.js");
+				await loadScript("/gallery/modula-wf.js");
+
+				const res = await fetch("https://origami.abstreamace.com/gallery/");
+				const html = await res.text();
+				const reg = new RegExp('<body class="cleanpage">(.+)<script type="application/ld\\+json">', "s");
+				const match = html.match(reg);
+				container.innerHTML = match[1];
+				jQuery(".modula.modula-gallery").each(function() {
+					const t = jQuery(this).data("config");
+					jQuery(this).modulaGallery(t);
+				});
+			} catch {
+				container.innerHTML = "Failed to load gallery.";
+			}
+		})();
+
+		return () => { link.remove(); };
+	}, []);
+
+	return <div ref={ref}>Loading...</div>;
+};
+
+<Gallery />

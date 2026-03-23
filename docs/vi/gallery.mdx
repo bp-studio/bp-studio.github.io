@@ -1,0 +1,54 @@
+import React from "react";
+
+# Bộ sưu tập
+
+Đây là những thiết kế gốc sử dụng (hoặc một phần sử dụng)
+BP Studio mà tôi biết đến hoặc được nhiều nhà thiết kế gửi cho tôi kể từ khi BP Studio ra mắt,
+theo thứ tự ngẫu nhiên:
+
+export const Gallery = () => {
+	const ref = React.useRef(null);
+	React.useEffect(() => {
+		const container = ref.current;
+		if (!container) return;
+
+		const link = document.createElement("link");
+		link.rel = "stylesheet";
+		link.href = "/gallery/front.css";
+		document.head.appendChild(link);
+
+		const loadScript = (src) => new Promise((resolve, reject) => {
+			const s = document.createElement("script");
+			s.src = src;
+			s.onload = resolve;
+			s.onerror = reject;
+			document.body.appendChild(s);
+		});
+
+		(async () => {
+			try {
+				await loadScript("/gallery/jquery.min.js");
+				await loadScript("/gallery/fancybox.js");
+				await loadScript("/gallery/modula-wf.js");
+
+				const res = await fetch("https://origami.abstreamace.com/gallery/");
+				const html = await res.text();
+				const reg = new RegExp('<body class="cleanpage">(.+)<script type="application/ld\\+json">', "s");
+				const match = html.match(reg);
+				container.innerHTML = match[1];
+				jQuery(".modula.modula-gallery").each(function() {
+					const t = jQuery(this).data("config");
+					jQuery(this).modulaGallery(t);
+				});
+			} catch {
+				container.innerHTML = "Không thể tải bộ sưu tập.";
+			}
+		})();
+
+		return () => { link.remove(); };
+	}, []);
+
+	return <div ref={ref}>Đang tải...</div>;
+};
+
+<Gallery />

@@ -1,0 +1,20 @@
+{
+  "name": "bp-studio-docs-rspress",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "rspress dev --port 4000",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.2",
+  "devDependencies": {
+    "@rspress/core": "^2.0.6",
+    "@types/node": "^25.5.0",
+    "@types/react-dom": "^19.2.3"
+  }
+}

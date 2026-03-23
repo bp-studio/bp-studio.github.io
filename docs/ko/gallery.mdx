@@ -1,0 +1,53 @@
+import React from "react";
+
+# 갤러리
+
+다음은 BP Studio 출시 이후 다양한 디자이너들이 제출하거나 제 관심을 받은,
+BP Studio를 (전부 또는 일부) 사용한 오리지널 디자인들로, 무작위 순서로 나열되어 있습니다:
+
+export const Gallery = () => {
+	const ref = React.useRef(null);
+	React.useEffect(() => {
+		const container = ref.current;
+		if (!container) return;
+
+		const link = document.createElement("link");
+		link.rel = "stylesheet";
+		link.href = "/gallery/front.css";
+		document.head.appendChild(link);
+
+		const loadScript = (src) => new Promise((resolve, reject) => {
+			const s = document.createElement("script");
+			s.src = src;
+			s.onload = resolve;
+			s.onerror = reject;
+			document.body.appendChild(s);
+		});
+
+		(async () => {
+			try {
+				await loadScript("/gallery/jquery.min.js");
+				await loadScript("/gallery/fancybox.js");
+				await loadScript("/gallery/modula-wf.js");
+
+				const res = await fetch("https://origami.abstreamace.com/gallery/");
+				const html = await res.text();
+				const reg = new RegExp('<body class="cleanpage">(.+)<script type="application/ld\\+json">', "s");
+				const match = html.match(reg);
+				container.innerHTML = match[1];
+				jQuery(".modula.modula-gallery").each(function() {
+					const t = jQuery(this).data("config");
+					jQuery(this).modulaGallery(t);
+				});
+			} catch {
+				container.innerHTML = "갤러리를 불러오지 못했습니다.";
+			}
+		})();
+
+		return () => { link.remove(); };
+	}, []);
+
+	return <div ref={ref}>로딩 중...</div>;
+};
+
+<Gallery />

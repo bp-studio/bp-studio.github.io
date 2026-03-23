@@ -1,0 +1,114 @@
+/* 首頁標題：logo + 文字並排 */
+.site-title {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+.site-title img {
+	height: 2em;
+}
+.site-title h1 {
+	margin: 0;
+}
+
+/* Badge 橫向排列 */
+.rspress-doc > p:has(> img[src*="shields.io"]) {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+/* Sidebar 樣式：仿照原站深藍背景 */
+.rp-doc-layout__sidebar {
+	--rp-c-bg: #0143a3;
+	overflow-y: auto !important;
+}
+
+/* 左側藍色背景帶（navbar + sidebar 共用） */
+@media (width > 768px) {
+	body::before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--rp-sidebar-margin-left) + var(--rp-sidebar-width));
+		background-color: #0143a3;
+		z-index: 10;
+		pointer-events: none;
+	}
+	.rp-nav {
+		background-color: transparent !important;
+		position: relative;
+	}
+	.rp-nav::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: calc(var(--rp-sidebar-margin-left) + var(--rp-sidebar-width));
+		right: 0;
+		bottom: 0;
+		background-color: var(--rp-c-bg);
+		z-index: -1;
+	}
+	.rp-nav__title,
+	.rp-nav__title a,
+	.rp-nav__title span {
+		color: #fff !important;
+	}
+	.rp-doc-layout__sidebar,
+	.rp-doc-layout__sidebar a,
+	.rp-doc-layout__sidebar .rp-sidebar-item {
+		color: #fff !important;
+	}
+	.rp-doc-layout__sidebar .rp-sidebar-item--active {
+		color: #fff !important;
+		background-color: rgba(255, 255, 255, 0.15);
+	}
+}
+
+.rp-nav__title span {
+	font-size: 1.5rem;
+}
+
+/* 工具列圖示定義列表 */
+.toolbar-list {
+	display: grid;
+	grid-template: auto / auto 1fr;
+	gap: 0.25rem 1rem;
+	align-items: baseline;
+}
+.toolbar-list dt {
+	font-size: 1.25rem;
+	text-align: center;
+}
+.toolbar-list dt::after {
+	content: "";
+}
+.toolbar-list dd {
+	margin: 0;
+}
+
+/* Navbar 圖示 */
+a[href="https://bpstudio.abstreamace.com"]::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f135";
+	margin-right: 0.4em;
+}
+a[href="https://bpstudio.abstreamace.com/donate.htm"]::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f4c0";
+	margin-right: 0.4em;
+}
+
+.rp-nav-screen-menu-item {
+	justify-content: start !important;
+}
+
+.copyright-footer {
+	padding: 2rem 0 0 0;
+	text-align: right;
+}
