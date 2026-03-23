@@ -1,21 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
-const COPYRIGHT: Record<string, string> = {
-	en: 'Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">Mu-Tsun Tsai</a>',
-	es: 'Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">Mu-Tsun Tsai</a>',
-	ja: 'Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">蔡 牧村</a>',
-	ko: 'Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">Mu-Tsun Tsai</a>',
-	vi: 'Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">Mu-Tsun Tsai</a>',
-	"zh-CN": 'Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">蔡牧村</a>',
-	"zh-TW": 'Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">蔡牧村</a>',
+const AUTHOR_NAME: Record<string, string> = {
+	ja: "蔡 牧村",
+	"zh-CN": "蔡牧村",
+	"zh-TW": "蔡牧村",
 };
 
+const copyright = (lang: string) =>
+	`Copyright © 2021-2026 <a href="https://origami.abstreamace.com/" target="_blank">${AUTHOR_NAME[lang] || "Mu-Tsun Tsai"}</a>`;
+
+function getLang() {
+	const match = location.pathname.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
+	return match ? match[1] : "en";
+}
+
 function FooterContent() {
-	const lang = typeof document !== "undefined"
-		? document.documentElement.lang || "en"
-		: "en";
-	const html = COPYRIGHT[lang] || COPYRIGHT.en;
+	const html = copyright(getLang());
 
 	return (
 		<div
@@ -26,9 +27,9 @@ function FooterContent() {
 }
 
 export default function CopyrightFooter() {
-	const [container, setContainer] = React.useState<HTMLElement | null>(null);
+	const [container, setContainer] = useState<HTMLElement | null>(null);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		const target = document.querySelector("main");
 		if (!target) return;
 
@@ -42,5 +43,5 @@ export default function CopyrightFooter() {
 	}, []);
 
 	if (!container) return null;
-	return ReactDOM.createPortal(<FooterContent />, container);
+	return createPortal(<FooterContent />, container);
 }

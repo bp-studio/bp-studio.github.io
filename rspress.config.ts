@@ -1,6 +1,6 @@
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { defineConfig } from "@rspress/core";
+import { defineConfig, UserConfig } from "@rspress/core";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -43,7 +43,7 @@ export default defineConfig({
 		editLinkText: { "zh-TW": "編輯此頁面", "zh-CN": "编辑此页面", "es": "Editar esta página", "vi": "Sửa trang này" },
 		notFoundText: { "zh-TW": "找不到頁面", "zh-CN": "页面未找到", "es": "PÁGINA NO ENCONTRADA", "vi": "KHÔNG TÌM THẤY TRANG" },
 		takeMeHomeText: { "zh-TW": "返回首頁", "zh-CN": "返回首页", "es": "Ir al inicio", "vi": "Về trang chủ" },
-	},
+	} as unknown,
 	builderConfig: {
 		html: {
 			tags: [
@@ -188,4 +188,4 @@ export default defineConfig({
 			},
 		],
 	},
-});
+} as UserConfig);
